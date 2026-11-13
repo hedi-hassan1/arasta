@@ -17,7 +17,7 @@ export default function Home() {
           <div>
             <span className="accent-bar" />
             <p className="mt-5 font-heading text-lg font-bold text-amber">{t.brand}</p>
-            <h1 className="mt-2 text-4xl font-extrabold leading-[1.45] sm:text-5xl lg:text-[56px]">{t.tagline}</h1>
+            <h1 className="mt-2 text-4xl/[1.75] font-extrabold sm:text-5xl/[1.75] lg:text-[56px]/[1.75]">{t.tagline}</h1>
             <p className="mt-6 max-w-xl text-lg text-mist sm:text-xl">{h.heroText}</p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a className="btn-amber" href={waLink(t.wa.more)} target="_blank" rel="noreferrer">

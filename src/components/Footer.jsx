@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="container-x grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
           <img src="/brand/arasta-horizontal-dark.svg" alt={t.brand} className="-m-4 h-28 w-auto" />
-          <p className="mt-6 max-w-xs font-heading text-lg font-bold text-cream">{t.tagline}</p>
+          <p className="mt-6 max-w-xs font-heading text-lg font-bold leading-[1.75] text-cream">{t.tagline}</p>
           <div className="mt-6 flex gap-3">
             {socials.map((s) => (
               <a key={s.name} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label}

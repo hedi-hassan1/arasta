@@ -20,6 +20,14 @@ module.exports = {
         body: ['"Noto Sans Arabic"', "sans-serif"],
       },
       borderRadius: { brand: "14px" },
+      // Sorani headings need taller lines than Tailwind's defaults (brand: 1.35–1.4)
+      fontSize: {
+        "2xl": ["1.5rem", { lineHeight: "1.4" }],
+        "3xl": ["1.875rem", { lineHeight: "1.4" }],
+        "4xl": ["2.25rem", { lineHeight: "1.4" }],
+        "5xl": ["3rem", { lineHeight: "1.4" }],
+        "6xl": ["3.75rem", { lineHeight: "1.4" }],
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
