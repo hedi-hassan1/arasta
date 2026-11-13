@@ -29,6 +29,7 @@ export const digits = (n, lang) => String(n).replace(/[0-9]/g, (d) => DIGITS[lan
 const SERVICE_META = [
   { id: "poland", icon: "study" },
   { id: "europe", icon: "europe" },
+  { id: "courses", icon: "courses" },
   { id: "systems", icon: "systems" },
   { id: "travel", icon: "travel" },
 ];
@@ -58,10 +59,10 @@ const ckb = {
     form: (f) => `سڵاو ئاکۆی،\nناو: ${f.name}\nخزمەتگوزاری: ${f.service}\n${f.message}`,
   },
   home: {
-    heroText: "یارمەتیت دەدەین لە خوێندن لە پۆڵەندا و ئەوروپا، سیستەم و تەکنەلۆژیا بۆ بازرگانی، و خزمەتگوزاری گەشت — بە ڕوونی و ڕاستگۆیی.",
+    heroText: "یارمەتیت دەدەین لە خوێندن لە پۆڵەندا، خوێندن و کار لە ئەوروپا و بەریتانیا، وۆرکشۆپ و خولی کورت، سیستەم بۆ بازرگانی، و خزمەتگوزاری گەشت — بە ڕوونی و ڕاستگۆیی.",
     servicesEyebrow: "خزمەتگوزارییەکانمان",
     servicesTitle: "چی بۆ تۆ دەکەین؟",
-    servicesText: "چوار بوار، یەک ئامانج: هەنگاوی داهاتووت ڕوون و ئاسان بکەین.",
+    servicesText: "پێنج بوار، یەک ئامانج: هەنگاوی داهاتووت ڕوون و ئاسان بکەین.",
     processEyebrow: "چۆن کار دەکەین",
     processTitle: "چوار هەنگاوی ڕوون",
     honestyTitle: "ڕاستگۆیی پێش هەموو شتێک",
@@ -69,7 +70,7 @@ const ckb = {
   servicesPage: {
     eyebrow: "خزمەتگوزارییەکان",
     title: "هەموو ئەوەی پێویستتە، لە یەک شوێن",
-    text: "خوێندن، سیستەم و گەشت — بە ڕێنمایی ڕوون و بەدواداچوونی بەردەوام.",
+    text: "خوێندن، کار، خول، سیستەم و گەشت — بە ڕێنمایی ڕوون و بەدواداچوونی بەردەوام.",
     note: "تێبینی:",
   },
   about: {
@@ -117,10 +118,16 @@ const ckb = {
       items: ["هەڵبژاردنی زانکۆ و بەشی گونجاو", "ناردنی داواکاری وەرگرتن", "ئامادەکردنی داواکاری بۆ سکۆڵارشیپی NAWA", "ڕێکخستنی بەڵگەنامەکان", "ئامادەکردنی فایلی ڤیزای خوێندن"],
     },
     {
-      title: "خوێندن لە ئەوروپا",
-      short: "زانکۆ و سکۆڵارشیپ، CV، نامەی هاندان و چاوپێکەوتن",
-      intro: "بۆ خوێندن لە وڵاتانی ئەوروپا، فایلێکی بەهێز و ڕوون ئامادە دەکەین.",
-      items: ["گەڕان بەدوای زانکۆ و سکۆڵارشیپی گونجاو", "نووسین و ڕێکخستنی CV", "نووسینی نامەی هاندان", "ئامادەکاری بۆ چاوپێکەوتن"],
+      title: "خوێندن و کار لە ئەوروپا و بەریتانیا",
+      short: "ڕاوێژکاری بۆ خوێندن و کار، سکۆڵارشیپ، CV و چاوپێکەوتن",
+      intro: "ڕاوێژکاری ڕوون بۆ خوێندن و کارکردن لە وڵاتانی ئەوروپا و بەریتانیا، و ئامادەکردنی فایلێکی بەهێز.",
+      items: ["ڕاوێژکاری بۆ خوێندن لە ئەوروپا و بەریتانیا", "ڕاوێژکاری بۆ کارکردن لە ئەوروپا و بەریتانیا", "گەڕان بەدوای زانکۆ و سکۆڵارشیپی گونجاو", "نووسینی CV و نامەی هاندان", "ئامادەکاری بۆ چاوپێکەوتن"],
+    },
+    {
+      title: "وۆرکشۆپ، کۆنفرانس و خولی کورت",
+      short: "دۆزینەوەی وۆرکشۆپ، کۆنفرانس و خولی کورتی گونجاو لە دەرەوە",
+      intro: "دەرفەتی گونجاو بۆ فێربوون و پەرەپێدان دەدۆزینەوە و لە ناردنی داواکارییەکەدا یارمەتیت دەدەین.",
+      items: ["دۆزینەوەی وۆرکشۆپ و کۆنفرانسی گونجاو", "دۆزینەوەی خولی کورت لە دەرەوەی وڵات", "یارمەتی لە ناردنی داواکاری و تۆمارکردن", "ئامادەکردنی بەڵگەنامە و فایلی ڤیزا ئەگەر پێویست بوو"],
     },
     {
       title: "سیستەم و تەکنەلۆژیا بۆ بازرگانی",
@@ -175,10 +182,10 @@ const ar = {
     form: (f) => `مرحباً ئاکۆی،\nالاسم: ${f.name}\nالخدمة: ${f.service}\n${f.message}`,
   },
   home: {
-    heroText: "نساعدك في الدراسة في بولندا وأوروبا، والأنظمة والتكنولوجيا للأعمال، وخدمات السفر — بوضوح وصدق.",
+    heroText: "نساعدك في الدراسة في بولندا، والدراسة والعمل في أوروبا والمملكة المتحدة، وورش العمل والدورات القصيرة، والأنظمة للأعمال، وخدمات السفر — بوضوح وصدق.",
     servicesEyebrow: "خدماتنا",
     servicesTitle: "ماذا نقدّم لك؟",
-    servicesText: "أربعة مجالات وهدف واحد: أن نجعل خطوتك القادمة واضحة وسهلة.",
+    servicesText: "خمسة مجالات وهدف واحد: أن نجعل خطوتك القادمة واضحة وسهلة.",
     processEyebrow: "كيف نعمل",
     processTitle: "أربع خطوات واضحة",
     honestyTitle: "الصدق قبل كل شيء",
@@ -186,7 +193,7 @@ const ar = {
   servicesPage: {
     eyebrow: "خدماتنا",
     title: "كل ما تحتاجه في مكان واحد",
-    text: "الدراسة والأنظمة والسفر — بإرشاد واضح ومتابعة مستمرة.",
+    text: "الدراسة والعمل والدورات والأنظمة والسفر — بإرشاد واضح ومتابعة مستمرة.",
     note: "ملاحظة:",
   },
   about: {
@@ -234,10 +241,16 @@ const ar = {
       items: ["اختيار الجامعة والتخصص المناسب", "تقديم طلب القبول", "تجهيز طلب منحة NAWA", "تنظيم الوثائق", "تجهيز ملف تأشيرة الدراسة"],
     },
     {
-      title: "الدراسة في أوروبا",
-      short: "الجامعات والمنح، السيرة الذاتية CV، رسالة الدافع والمقابلات",
-      intro: "للدراسة في دول أوروبا، نجهّز لك ملفاً قوياً وواضحاً.",
-      items: ["البحث عن الجامعات والمنح المناسبة", "كتابة وتنسيق السيرة الذاتية CV", "كتابة رسالة الدافع", "التحضير للمقابلة"],
+      title: "الدراسة والعمل في أوروبا والمملكة المتحدة",
+      short: "استشارات للدراسة والعمل، المنح، السيرة الذاتية CV والمقابلات",
+      intro: "استشارات واضحة للدراسة والعمل في دول أوروبا والمملكة المتحدة، وتجهيز ملف قوي.",
+      items: ["استشارات للدراسة في أوروبا والمملكة المتحدة", "استشارات للعمل في أوروبا والمملكة المتحدة", "البحث عن الجامعات والمنح المناسبة", "كتابة السيرة الذاتية CV ورسالة الدافع", "التحضير للمقابلة"],
+    },
+    {
+      title: "ورش العمل والمؤتمرات والدورات القصيرة",
+      short: "إيجاد ورش عمل ومؤتمرات ودورات قصيرة مناسبة في الخارج",
+      intro: "نجد لك فرصاً مناسبة للتعلّم والتطوير، ونساعدك في التقديم.",
+      items: ["إيجاد ورش العمل والمؤتمرات المناسبة", "إيجاد دورات قصيرة في الخارج", "المساعدة في التقديم والتسجيل", "تجهيز الوثائق وملف التأشيرة عند الحاجة"],
     },
     {
       title: "الأنظمة والتكنولوجيا للأعمال",
@@ -292,10 +305,10 @@ const en = {
     form: (f) => `Hello Akoi,\nName: ${f.name}\nService: ${f.service}\n${f.message}`,
   },
   home: {
-    heroText: "We help you study in Poland and Europe, build systems and technology for your business, and travel — clearly and honestly.",
+    heroText: "We help you study in Poland, study and work in Europe and the UK, find workshops and short courses, build systems for your business, and travel — clearly and honestly.",
     servicesEyebrow: "Our services",
     servicesTitle: "What we do for you",
-    servicesText: "Four areas, one goal: to make your next step clear and simple.",
+    servicesText: "Five areas, one goal: to make your next step clear and simple.",
     processEyebrow: "How we work",
     processTitle: "Four clear steps",
     honestyTitle: "Honesty comes first",
@@ -303,7 +316,7 @@ const en = {
   servicesPage: {
     eyebrow: "Services",
     title: "Everything you need, in one place",
-    text: "Study, systems and travel — with clear guidance and steady follow-up.",
+    text: "Study, work, courses, systems and travel — with clear guidance and steady follow-up.",
     note: "Note:",
   },
   about: {
@@ -351,10 +364,16 @@ const en = {
       items: ["Choosing the right university and program", "Submitting your admission application", "Preparing your NAWA scholarship application", "Organizing your documents", "Preparing your student visa file"],
     },
     {
-      title: "Study in Europe",
-      short: "Universities and scholarships, CV, motivation letter and interviews",
-      intro: "To study in Europe, we help you prepare a strong, clear application.",
-      items: ["Finding the right universities and scholarships", "Writing and formatting your CV", "Writing your motivation letter", "Interview preparation"],
+      title: "Study & Work in Europe and the UK",
+      short: "Consultation for study and work, scholarships, CV and interviews",
+      intro: "Clear advice for studying and working in Europe and the UK, and help preparing a strong application.",
+      items: ["Consultation for studying in Europe and the UK", "Consultation for working in Europe and the UK", "Finding the right universities and scholarships", "Writing your CV and motivation letter", "Interview preparation"],
+    },
+    {
+      title: "Workshops, Conferences & Short Courses",
+      short: "Finding the right workshops, conferences and short courses abroad",
+      intro: "We find the right opportunities to learn and grow, and help you apply.",
+      items: ["Finding suitable workshops and conferences", "Finding short courses abroad", "Help with applications and registration", "Preparing documents and visa files if needed"],
     },
     {
       title: "Systems & Technology for Business",

@@ -35,7 +35,7 @@ export default function Home() {
       {/* Services */}
       <section className="container-x py-24">
         <SectionHead eyebrow={h.servicesEyebrow} title={h.servicesTitle} text={h.servicesText} />
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {t.services.map((s) => (
             <Link key={s.id} to={`/services#${s.id}`} className="card group flex flex-col p-7 transition-colors hover:border-accent sm:p-8">
               <span className="grid h-14 w-14 place-items-center rounded-brand bg-sand text-navy"><Icon name={s.icon} size={30} /></span>
