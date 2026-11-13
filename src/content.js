@@ -1,0 +1,397 @@
+// All site text in three languages: Sorani (ckb), Arabic (ar), English (en).
+// Contact details are the business's own public channels and are shared by all languages.
+
+export const contact = {
+  whatsapp: "9647510615254",
+  whatsappDisplay: "+964 751 061 5254",
+  phone2Display: "+964 750 360 0926",
+  phone2: "+9647503600926",
+  email: "arasta.agency1@gmail.com",
+  instagram: "https://www.instagram.com/arasta.agency",
+  facebook: "https://www.facebook.com/arasta.agency",
+  tiktok: "https://www.tiktok.com/@arasta.agency",
+  handle: "@arasta.agency",
+};
+
+export const waLink = (text) =>
+  `https://wa.me/${contact.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
+
+export const languages = [
+  { code: "ckb", label: "کوردی", short: "کو", dir: "rtl" },
+  { code: "ar", label: "العربية", short: "ع", dir: "rtl" },
+  { code: "en", label: "English", short: "EN", dir: "ltr" },
+];
+
+const DIGITS = { ckb: "٠١٢٣٤٥٦٧٨٩", ar: "٠١٢٣٤٥٦٧٨٩", en: "0123456789" };
+export const digits = (n, lang) => String(n).replace(/[0-9]/g, (d) => DIGITS[lang][d]);
+
+// icons and ids are shared; text comes from each language
+const SERVICE_META = [
+  { id: "poland", icon: "study" },
+  { id: "europe", icon: "europe" },
+  { id: "systems", icon: "systems" },
+  { id: "travel", icon: "travel" },
+];
+
+const ckb = {
+  brand: "ئاڕاستە",
+  metaTitle: "ئاڕاستە — ئاڕاستەی داهاتووت دیاری بکە",
+  tagline: "ئاڕاستەی داهاتووت دیاری بکە",
+  nav: ["سەرەکی", "خزمەتگوزارییەکان", "دەربارە", "پەیوەندی"],
+  langLabel: "زمان",
+  menuOpen: "کردنەوەی لیست",
+  menuClose: "داخستنی لیست",
+  messageUs: "نامەمان بۆ بنێرە",
+  whatsapp: "واتسئاپ",
+  instagram: "ئینستاگرام",
+  facebook: "فەیسبووک",
+  tiktok: "تیکتۆک",
+  phone: "تەلەفۆن",
+  email: "ئیمەیڵ",
+  learnMore: "زیاتر بزانە",
+  askAbout: "پرسیار بکە",
+  wa: {
+    hello: "سڵاو ئاڕاستە",
+    more: "سڵاو ئاڕاستە، دەمەوێت زیاتر بزانم.",
+    question: "سڵاو ئاڕاستە، پرسیارێکم هەیە.",
+    about: (s) => `سڵاو ئاڕاستە، پرسیارم هەیە دەربارەی: ${s}`,
+    form: (f) => `سڵاو ئاڕاستە،\nناو: ${f.name}\nخزمەتگوزاری: ${f.service}\n${f.message}`,
+  },
+  home: {
+    heroText: "یارمەتیت دەدەین لە خوێندن لە پۆڵەندا و ئەوروپا، سیستەم و تەکنەلۆژیا بۆ بازرگانی، و خزمەتگوزاری گەشت — بە ڕوونی و ڕاستگۆیی.",
+    servicesEyebrow: "خزمەتگوزارییەکانمان",
+    servicesTitle: "چی بۆ تۆ دەکەین؟",
+    servicesText: "چوار بوار، یەک ئامانج: هەنگاوی داهاتووت ڕوون و ئاسان بکەین.",
+    processEyebrow: "چۆن کار دەکەین",
+    processTitle: "چوار هەنگاوی ڕوون",
+    honestyTitle: "ڕاستگۆیی پێش هەموو شتێک",
+  },
+  servicesPage: {
+    eyebrow: "خزمەتگوزارییەکان",
+    title: "هەموو ئەوەی پێویستتە، لە یەک شوێن",
+    text: "خوێندن، سیستەم و گەشت — بە ڕێنمایی ڕوون و بەدواداچوونی بەردەوام.",
+    note: "تێبینی:",
+  },
+  about: {
+    eyebrow: "دەربارەی ئێمە",
+    title: "ئێمە کێین؟",
+    text: "ئاڕاستە دامەزراوە بۆ ئەوەی خەڵک بە ڕوونی و متمانەوە هەنگاوی داهاتوویان بنێن — بۆ خوێندن لە دەرەوە، بۆ گەشت، و بۆ بازرگانییەک کە بە سیستەمی باش ڕێکخراوە.",
+    storyEyebrow: "چیرۆکەکەمان",
+    storyTitle: "بۆچی ئاڕاستە؟",
+    story: [
+      "زۆر کەس دەیانەوێت لە دەرەوە بخوێنن یان گەشت بکەن، بەڵام نازانن لە کوێوە دەست پێ بکەن. زانیاری پەرشوبڵاوە و هەڵە گران دەکەوێت.",
+      "ئێمە ئەم ڕێگایە ڕوون دەکەینەوە: پلانێکی ڕاستەقینە، فایلێکی ڕێک و وەڵامی ڕاستگۆیانە. هەروەها بۆ بازرگانییەکان سیستەم دروست دەکەین — نەک تەنها ئامراز — تا کارەکانیان ڕێک و خێرا بێت.",
+    ],
+    founderLabel: "دامەزرێنەر",
+    founderName: "Hedi Agha Hassan",
+    founderText: "دامەزرێنەری ئاڕاستە، بە ئامانجی ئەوەی ڕێنمایی ڕاستگۆیانە و سیستەمی نوێ بگەیەنێتە خەڵکی کوردستان.",
+    valuesEyebrow: "بەهاکانمان",
+    valuesTitle: "ئەوەی پێی کار دەکەین",
+  },
+  connect: {
+    eyebrow: "پەیوەندی",
+    title: "نامەمان بۆ بنێرە",
+    text: "پرسیارەکەت بنووسە، لە واتسئاپ دەگاتە لامان و بە زووترین کات وەڵامت دەدەینەوە.",
+    formTitle: "نامەی واتسئاپ",
+    name: "ناوت",
+    namePh: "ناوی تەواو",
+    service: "خزمەتگوزاری",
+    other: "پرسیاری تر",
+    message: "نامەکەت",
+    messagePh: "پرسیارەکەت لێرە بنووسە",
+    send: "ناردن لە واتسئاپ",
+  },
+  cta: {
+    title: "پرسیارت هەیە؟ نامەمان بۆ بنێرە",
+    text: "لە واتسئاپ یان ئینستاگرام پەیوەندیمان پێوە بکە. بە خۆشحاڵییەوە وەڵامت دەدەینەوە.",
+  },
+  footer: { pages: "پەڕەکان", services: "خزمەتگوزارییەکان", contact: "پەیوەندی", rights: "هەموو مافەکان پارێزراون." },
+  notFound: {
+    title: "ئەم پەڕەیە نەدۆزرایەوە",
+    text: "لەوانەیە بەستەرەکە گۆڕابێت. با بگەڕێینەوە بۆ سەرەکی.",
+    back: "گەڕانەوە بۆ سەرەکی",
+  },
+  services: [
+    {
+      title: "خوێندن لە پۆڵەندا",
+      short: "وەرگرتن، بورسی NAWA، بەڵگەنامە و ڤیزای خوێندن",
+      intro: "لە هەڵبژاردنی زانکۆوە تا ڤیزای خوێندن، هەنگاو بە هەنگاو لەگەڵتین.",
+      items: ["هەڵبژاردنی زانکۆ و بەشی گونجاو", "ناردنی داواکاری وەرگرتن", "ئامادەکردنی داواکاری بۆ بورسی NAWA", "ڕێکخستنی بەڵگەنامەکان", "ئامادەکردنی فایلی ڤیزای خوێندن"],
+    },
+    {
+      title: "خوێندن لە ئەوروپا",
+      short: "زانکۆ و بورس، CV، نامەی هاندان و چاوپێکەوتن",
+      intro: "بۆ خوێندن لە وڵاتانی ئەوروپا، فایلێکی بەهێز و ڕوون ئامادە دەکەین.",
+      items: ["گەڕان بەدوای زانکۆ و بورسی گونجاو", "نووسین و ڕێکخستنی CV", "نووسینی نامەی هاندان", "ئامادەکاری بۆ چاوپێکەوتن"],
+    },
+    {
+      title: "سیستەم و تەکنەلۆژیا بۆ بازرگانی",
+      short: "سیستەمی بازرگانی، ماڵپەڕ، سیستەمی بەڵگەنامە و چاتبۆتی کوردی",
+      intro: "تەنها ئامرازێک دروست ناکەین — سیستەمێک دروست دەکەین کە کارەکەت ڕێک بخات و کاتت بگەڕێنێتەوە.",
+      items: ["سیستەمی بازرگانی بەپێی کارەکەت", "دروستکردنی ماڵپەڕ", "سیستەمی ڕێکخستنی بەڵگەنامە", "چاتبۆتی کوردی بۆ وەڵامدانەوەی کڕیاران", "خولی تەکنەلۆژیا بۆ تیمەکەت"],
+    },
+    {
+      title: "خزمەتگوزاری گەشت",
+      short: "فایلی ڤیزا، بلیتی فڕۆکە، هوتێل و بیمەی گەشت",
+      intro: "گەشتەکەت ئاسان دەکەین: لە فایلی ڤیزاوە تا ژووری هوتێل.",
+      items: ["ئامادەکردنی فایلی ڤیزا", "بلیتی فڕۆکە", "گرتنی ژووری هوتێل", "بیمەی گەشت"],
+    },
+  ],
+  steps: [
+    { title: "پەیوەندی بکە", text: "لە واتسئاپ یان ئینستاگرام نامەمان بۆ بنێرە و پێمان بڵێ چیت دەوێت." },
+    { title: "ڕاوێژ و پلان", text: "پێکەوە بارودۆخەکەت دەخوێنینەوە و پلانێکی ڕوون دادەنێین." },
+    { title: "ئامادەکردنی فایل", text: "بەڵگەنامە و داواکارییەکان بە وردی ئامادە دەکەین." },
+    { title: "بەدواداچوون", text: "تا کۆتایی کارەکە لەگەڵتین و هەموو هەنگاوێکت پێ ڕادەگەیەنین." },
+  ],
+  values: [
+    { title: "متمانە", text: "کارەکەت بە ئەمانەتەوە دەگرینە دەست." },
+    { title: "ڕوونی", text: "هەموو هەنگاوێک و هەموو تێچوویەک پێشتر ڕوون دەکەینەوە." },
+    { title: "ڕاستگۆیی", text: "ئەوەی دەتوانین دەیڵێین، ئەوەی ناتوانین دەیڵێین." },
+    { title: "نوێخوازی", text: "بە ئامراز و سیستەمی نوێ کار دەکەین." },
+  ],
+  honesty: "ئێمە بەڵێنی وەرگرتن، بورس یان ڤیزا نادەین — بڕیاری کۆتایی لای زانکۆ و باڵیۆزخانەکانە. ئەوەی ئێمە بەڵێنی دەدەین: فایلێکی ڕێک، ڕێنمایی ڕاستگۆیانە و بەدواداچوونی بەردەوام.",
+};
+
+const ar = {
+  brand: "ئاڕاستە",
+  metaTitle: "ئاڕاستە — حدّد اتجاه مستقبلك",
+  tagline: "حدّد اتجاه مستقبلك",
+  nav: ["الرئيسية", "خدماتنا", "من نحن", "تواصل معنا"],
+  langLabel: "اللغة",
+  menuOpen: "فتح القائمة",
+  menuClose: "إغلاق القائمة",
+  messageUs: "راسلنا",
+  whatsapp: "واتساب",
+  instagram: "إنستغرام",
+  facebook: "فيسبوك",
+  tiktok: "تيك توك",
+  phone: "الهاتف",
+  email: "البريد الإلكتروني",
+  learnMore: "اعرف المزيد",
+  askAbout: "اسألنا",
+  wa: {
+    hello: "مرحباً ئاڕاستە",
+    more: "مرحباً ئاڕاستە، أودّ معرفة المزيد.",
+    question: "مرحباً ئاڕاستە، لديّ سؤال.",
+    about: (s) => `مرحباً ئاڕاستە، لديّ سؤال عن: ${s}`,
+    form: (f) => `مرحباً ئاڕاستە،\nالاسم: ${f.name}\nالخدمة: ${f.service}\n${f.message}`,
+  },
+  home: {
+    heroText: "نساعدك في الدراسة في بولندا وأوروبا، والأنظمة والتكنولوجيا للأعمال، وخدمات السفر — بوضوح وصدق.",
+    servicesEyebrow: "خدماتنا",
+    servicesTitle: "ماذا نقدّم لك؟",
+    servicesText: "أربعة مجالات وهدف واحد: أن نجعل خطوتك القادمة واضحة وسهلة.",
+    processEyebrow: "كيف نعمل",
+    processTitle: "أربع خطوات واضحة",
+    honestyTitle: "الصدق قبل كل شيء",
+  },
+  servicesPage: {
+    eyebrow: "خدماتنا",
+    title: "كل ما تحتاجه في مكان واحد",
+    text: "الدراسة والأنظمة والسفر — بإرشاد واضح ومتابعة مستمرة.",
+    note: "ملاحظة:",
+  },
+  about: {
+    eyebrow: "من نحن",
+    title: "من نحن؟",
+    text: "تأسست ئاڕاستە لتساعد الناس على اتخاذ خطواتهم القادمة بوضوح وثقة — للدراسة في الخارج، وللسفر، ولأعمال منظّمة بأنظمة جيدة.",
+    storyEyebrow: "قصتنا",
+    storyTitle: "لماذا ئاڕاستە؟",
+    story: [
+      "كثيرون يريدون الدراسة في الخارج أو السفر، لكنهم لا يعرفون من أين يبدؤون. المعلومات متفرقة والأخطاء مكلفة.",
+      "نحن نوضّح هذا الطريق: خطة واقعية، وملف منظّم، وإجابات صادقة. ونبني للشركات أنظمة — لا مجرد أدوات — لتصبح أعمالها منظّمة وأسرع.",
+    ],
+    founderLabel: "المؤسس",
+    founderName: "Hedi Agha Hassan",
+    founderText: "مؤسس ئاڕاستە، يهدف إلى إيصال الإرشاد الصادق والأنظمة الحديثة إلى أهل كوردستان.",
+    valuesEyebrow: "قيمنا",
+    valuesTitle: "ما نعمل به",
+  },
+  connect: {
+    eyebrow: "تواصل معنا",
+    title: "راسلنا",
+    text: "اكتب سؤالك، وسيصلنا عبر واتساب ونرد عليك في أقرب وقت.",
+    formTitle: "رسالة واتساب",
+    name: "اسمك",
+    namePh: "الاسم الكامل",
+    service: "الخدمة",
+    other: "سؤال آخر",
+    message: "رسالتك",
+    messagePh: "اكتب سؤالك هنا",
+    send: "إرسال عبر واتساب",
+  },
+  cta: {
+    title: "لديك سؤال؟ راسلنا",
+    text: "تواصل معنا عبر واتساب أو إنستغرام، ويسعدنا الرد عليك.",
+  },
+  footer: { pages: "الصفحات", services: "خدماتنا", contact: "تواصل معنا", rights: "جميع الحقوق محفوظة." },
+  notFound: {
+    title: "الصفحة غير موجودة",
+    text: "ربما تغيّر الرابط. لنعد إلى الصفحة الرئيسية.",
+    back: "العودة إلى الرئيسية",
+  },
+  services: [
+    {
+      title: "الدراسة في بولندا",
+      short: "القبول، منح NAWA، الوثائق وتأشيرة الدراسة",
+      intro: "من اختيار الجامعة حتى تأشيرة الدراسة، نرافقك خطوة بخطوة.",
+      items: ["اختيار الجامعة والتخصص المناسب", "تقديم طلب القبول", "تجهيز طلب منحة NAWA", "تنظيم الوثائق", "تجهيز ملف تأشيرة الدراسة"],
+    },
+    {
+      title: "الدراسة في أوروبا",
+      short: "الجامعات والمنح، السيرة الذاتية CV، رسالة الدافع والمقابلات",
+      intro: "للدراسة في دول أوروبا، نجهّز لك ملفاً قوياً وواضحاً.",
+      items: ["البحث عن الجامعات والمنح المناسبة", "كتابة وتنسيق السيرة الذاتية CV", "كتابة رسالة الدافع", "التحضير للمقابلة"],
+    },
+    {
+      title: "الأنظمة والتكنولوجيا للأعمال",
+      short: "أنظمة الأعمال، المواقع الإلكترونية، أنظمة الوثائق وروبوتات محادثة بالكوردية",
+      intro: "لا نبني مجرد أداة — نبني نظاماً ينظّم عملك ويوفّر وقتك.",
+      items: ["أنظمة أعمال مصمّمة حسب عملك", "تصميم المواقع الإلكترونية", "أنظمة تنظيم الوثائق", "روبوت محادثة بالكوردية للرد على العملاء", "دورات تكنولوجيا لفريقك"],
+    },
+    {
+      title: "خدمات السفر",
+      short: "ملف التأشيرة، تذاكر الطيران، الفنادق وتأمين السفر",
+      intro: "نسهّل رحلتك: من ملف التأشيرة حتى غرفة الفندق.",
+      items: ["تجهيز ملف التأشيرة", "تذاكر الطيران", "حجز الفنادق", "تأمين السفر"],
+    },
+  ],
+  steps: [
+    { title: "تواصل معنا", text: "راسلنا عبر واتساب أو إنستغرام وأخبرنا بما تحتاجه." },
+    { title: "استشارة وخطة", text: "ندرس وضعك معاً ونضع خطة واضحة." },
+    { title: "تجهيز الملف", text: "نجهّز الوثائق والطلبات بدقة." },
+    { title: "المتابعة", text: "نبقى معك حتى النهاية ونطلعك على كل خطوة." },
+  ],
+  values: [
+    { title: "الثقة", text: "نتعامل مع عملك بأمانة." },
+    { title: "الوضوح", text: "نوضّح كل خطوة وكل تكلفة مسبقاً." },
+    { title: "الصدق", text: "نقول ما نستطيع فعله، وما لا نستطيع." },
+    { title: "التجديد", text: "نعمل بأدوات وأنظمة حديثة." },
+  ],
+  honesty: "نحن لا نعد بالقبول أو المنحة أو التأشيرة — فالقرار النهائي بيد الجامعات والسفارات. ما نعد به: ملف منظّم، وإرشاد صادق، ومتابعة مستمرة.",
+};
+
+const en = {
+  brand: "Arasta",
+  metaTitle: "Arasta — Set the direction of your future",
+  tagline: "Set the direction of your future",
+  nav: ["Home", "Services", "About", "Contact"],
+  langLabel: "Language",
+  menuOpen: "Open menu",
+  menuClose: "Close menu",
+  messageUs: "Message us",
+  whatsapp: "WhatsApp",
+  instagram: "Instagram",
+  facebook: "Facebook",
+  tiktok: "TikTok",
+  phone: "Phone",
+  email: "Email",
+  learnMore: "Learn more",
+  askAbout: "Ask us",
+  wa: {
+    hello: "Hello Arasta",
+    more: "Hello Arasta, I'd like to know more.",
+    question: "Hello Arasta, I have a question.",
+    about: (s) => `Hello Arasta, I have a question about: ${s}`,
+    form: (f) => `Hello Arasta,\nName: ${f.name}\nService: ${f.service}\n${f.message}`,
+  },
+  home: {
+    heroText: "We help you study in Poland and Europe, build systems and technology for your business, and travel — clearly and honestly.",
+    servicesEyebrow: "Our services",
+    servicesTitle: "What we do for you",
+    servicesText: "Four areas, one goal: to make your next step clear and simple.",
+    processEyebrow: "How we work",
+    processTitle: "Four clear steps",
+    honestyTitle: "Honesty comes first",
+  },
+  servicesPage: {
+    eyebrow: "Services",
+    title: "Everything you need, in one place",
+    text: "Study, systems and travel — with clear guidance and steady follow-up.",
+    note: "Note:",
+  },
+  about: {
+    eyebrow: "About us",
+    title: "Who we are",
+    text: "Arasta was founded to help people take their next step with clarity and confidence — to study abroad, to travel, and to run a business on good systems.",
+    storyEyebrow: "Our story",
+    storyTitle: "Why Arasta?",
+    story: [
+      "Many people want to study abroad or travel but don't know where to start. Information is scattered, and mistakes are expensive.",
+      "We make the path clear: a realistic plan, a well-prepared file and honest answers. For businesses, we build systems — not just tools — so their work runs smoothly and faster.",
+    ],
+    founderLabel: "Founder",
+    founderName: "Hedi Agha Hassan",
+    founderText: "Founder of Arasta, working to bring honest guidance and modern systems to people in Kurdistan.",
+    valuesEyebrow: "Our values",
+    valuesTitle: "What we stand for",
+  },
+  connect: {
+    eyebrow: "Contact",
+    title: "Message us",
+    text: "Write your question — it reaches us on WhatsApp and we'll reply as soon as we can.",
+    formTitle: "WhatsApp message",
+    name: "Your name",
+    namePh: "Full name",
+    service: "Service",
+    other: "Other question",
+    message: "Your message",
+    messagePh: "Write your question here",
+    send: "Send on WhatsApp",
+  },
+  cta: {
+    title: "Have a question? Message us",
+    text: "Reach us on WhatsApp or Instagram — we're happy to help.",
+  },
+  footer: { pages: "Pages", services: "Services", contact: "Contact", rights: "All rights reserved." },
+  notFound: {
+    title: "Page not found",
+    text: "The link may have changed. Let's go back to the home page.",
+    back: "Back to home",
+  },
+  services: [
+    {
+      title: "Study in Poland",
+      short: "Admissions, NAWA scholarships, documents and student visa",
+      intro: "From choosing a university to your student visa, we're with you step by step.",
+      items: ["Choosing the right university and program", "Submitting your admission application", "Preparing your NAWA scholarship application", "Organizing your documents", "Preparing your student visa file"],
+    },
+    {
+      title: "Study in Europe",
+      short: "Universities and scholarships, CV, motivation letter and interviews",
+      intro: "To study in Europe, we help you prepare a strong, clear application.",
+      items: ["Finding the right universities and scholarships", "Writing and formatting your CV", "Writing your motivation letter", "Interview preparation"],
+    },
+    {
+      title: "Systems & Technology for Business",
+      short: "Business systems, websites, document systems and Kurdish chatbots",
+      intro: "We don't just build a tool — we build a system that organizes your work and gives you back your time.",
+      items: ["Business systems built around your work", "Website development", "Document management systems", "Kurdish chatbots to answer your customers", "Technology training for your team"],
+    },
+    {
+      title: "Travel Services",
+      short: "Visa files, flights, hotels and travel insurance",
+      intro: "We make your trip easy: from the visa file to the hotel room.",
+      items: ["Preparing your visa file", "Flight tickets", "Hotel booking", "Travel insurance"],
+    },
+  ],
+  steps: [
+    { title: "Get in touch", text: "Message us on WhatsApp or Instagram and tell us what you need." },
+    { title: "Advice and a plan", text: "We look at your situation together and make a clear plan." },
+    { title: "Preparing your file", text: "We prepare your documents and applications carefully." },
+    { title: "Follow-up", text: "We stay with you to the end and keep you updated at every step." },
+  ],
+  values: [
+    { title: "Trust", text: "We handle your case with care." },
+    { title: "Clarity", text: "We explain every step and every cost up front." },
+    { title: "Honesty", text: "We tell you what we can do — and what we can't." },
+    { title: "Innovation", text: "We work with modern tools and systems." },
+  ],
+  honesty: "We never promise admission, a scholarship or a visa — the final decision belongs to universities and embassies. What we do promise: a well-prepared file, honest guidance and steady follow-up.",
+};
+
+const withMeta = (t) => ({ ...t, services: t.services.map((s, i) => ({ ...SERVICE_META[i], ...s })) });
+
+export const content = { ckb: withMeta(ckb), ar: withMeta(ar), en: withMeta(en) };
+
+export const routes = ["/", "/services", "/about", "/connect"];
