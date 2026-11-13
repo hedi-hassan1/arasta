@@ -26,8 +26,7 @@ export default function About() {
           <div className="card self-start p-8">
             <span className="accent-bar" />
             <h3 className="mt-4 text-xl font-bold">{a.founderLabel}</h3>
-            <p className="mt-2 font-heading text-2xl font-extrabold"><span className="ltr">{a.founderName}</span></p>
-            <p className="mt-3 text-slate">{a.founderText}</p>
+            <p className="mt-2 text-lg text-slate">{a.founderText}</p>
           </div>
         </div>
       </section>
