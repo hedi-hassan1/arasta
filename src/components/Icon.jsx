@@ -1,6 +1,6 @@
 import React from "react";
 
-// Arasta line icons: 24 grid, stroke 1.5, round caps (same set as brand/icons)
+// Akoi line icons: 24 grid, stroke 1.5, round caps (same set as brand/icons)
 const paths = {
   study: <><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z" /><path d="M6.5 11v5c0 1.6 2.5 3 5.5 3s5.5-1.4 5.5-3v-5" /><path d="M21.5 9v5" /></>,
   europe: <><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="3.8" ry="9" /><path d="M3 12h18M4.6 7.5h14.8M4.6 16.5h14.8" /></>,

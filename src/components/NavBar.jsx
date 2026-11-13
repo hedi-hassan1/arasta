@@ -18,7 +18,7 @@ export default function NavBar() {
     <header className="sticky top-0 z-40 border-b border-line bg-cream/95 backdrop-blur">
       <div className="container-x flex h-20 items-center justify-between gap-4">
         <Link to="/" aria-label={t.brand} className="shrink-0">
-          <img src="/brand/arasta-horizontal-light.svg" alt={t.brand} className="-m-2 h-[76px] w-auto" />
+          <img src="/brand/akoi-horizontal-light.svg" alt={t.brand} className="-my-3 h-[96px] w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label={t.nav[0]}>

@@ -11,7 +11,7 @@ export default function About() {
       <section className="bg-navy py-20 text-cream">
         <div className="container-x grid items-center gap-12 md:grid-cols-[1.4fr_1fr]">
           <SectionHead dark eyebrow={a.eyebrow} title={a.title} text={a.text} />
-          <img src="/brand/arasta-stacked-dark.svg" alt={t.brand} className="mx-auto hidden w-full max-w-[300px] md:block" />
+          <img src="/brand/akoi-stacked-dark.svg" alt={t.brand} className="mx-auto hidden w-full max-w-[300px] md:block" />
         </div>
       </section>
 

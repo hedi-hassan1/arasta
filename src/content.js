@@ -34,8 +34,8 @@ const SERVICE_META = [
 ];
 
 const ckb = {
-  brand: "ئاڕاستە",
-  metaTitle: "ئاڕاستە — ئاڕاستەی داهاتووت دیاری بکە",
+  brand: "ئاکۆی",
+  metaTitle: "ئاکۆی — ئاڕاستەی داهاتووت دیاری بکە",
   tagline: "ئاڕاستەی داهاتووت دیاری بکە",
   nav: ["سەرەکی", "خزمەتگوزارییەکان", "دەربارە", "پەیوەندی"],
   langLabel: "زمان",
@@ -51,11 +51,11 @@ const ckb = {
   learnMore: "زیاتر بزانە",
   askAbout: "پرسیار بکە",
   wa: {
-    hello: "سڵاو ئاڕاستە",
-    more: "سڵاو ئاڕاستە، دەمەوێت زیاتر بزانم.",
-    question: "سڵاو ئاڕاستە، پرسیارێکم هەیە.",
-    about: (s) => `سڵاو ئاڕاستە، پرسیارم هەیە دەربارەی: ${s}`,
-    form: (f) => `سڵاو ئاڕاستە،\nناو: ${f.name}\nخزمەتگوزاری: ${f.service}\n${f.message}`,
+    hello: "سڵاو ئاکۆی",
+    more: "سڵاو ئاکۆی، دەمەوێت زیاتر بزانم.",
+    question: "سڵاو ئاکۆی، پرسیارێکم هەیە.",
+    about: (s) => `سڵاو ئاکۆی، پرسیارم هەیە دەربارەی: ${s}`,
+    form: (f) => `سڵاو ئاکۆی،\nناو: ${f.name}\nخزمەتگوزاری: ${f.service}\n${f.message}`,
   },
   home: {
     heroText: "یارمەتیت دەدەین لە خوێندن لە پۆڵەندا و ئەوروپا، سیستەم و تەکنەلۆژیا بۆ بازرگانی، و خزمەتگوزاری گەشت — بە ڕوونی و ڕاستگۆیی.",
@@ -75,9 +75,9 @@ const ckb = {
   about: {
     eyebrow: "دەربارەی ئێمە",
     title: "ئێمە کێین؟",
-    text: "ئاڕاستە دامەزراوە بۆ ئەوەی خەڵک بە ڕوونی و متمانەوە هەنگاوی داهاتوویان بنێن — بۆ خوێندن لە دەرەوە، بۆ گەشت، و بۆ بازرگانییەک کە بە سیستەمی باش ڕێکخراوە.",
+    text: "ئاکۆی دامەزراوە بۆ ئەوەی خەڵک بە ڕوونی و متمانەوە هەنگاوی داهاتوویان بنێن — بۆ خوێندن لە دەرەوە، بۆ گەشت، و بۆ بازرگانییەک کە بە سیستەمی باش ڕێکخراوە.",
     storyEyebrow: "چیرۆکەکەمان",
-    storyTitle: "بۆچی ئاڕاستە؟",
+    storyTitle: "بۆچی ئاکۆی؟",
     story: [
       "زۆر کەس دەیانەوێت لە دەرەوە بخوێنن یان گەشت بکەن، بەڵام نازانن لە کوێوە دەست پێ بکەن. زانیاری پەرشوبڵاوە و هەڵە گران دەکەوێت.",
       "ئێمە ئەم ڕێگایە ڕوون دەکەینەوە: پلانێکی ڕاستەقینە، فایلێکی ڕێک و وەڵامی ڕاستگۆیانە. هەروەها بۆ بازرگانییەکان سیستەم دروست دەکەین — نەک تەنها ئامراز — تا کارەکانیان ڕێک و خێرا بێت.",
@@ -151,8 +151,8 @@ const ckb = {
 };
 
 const ar = {
-  brand: "ئاڕاستە",
-  metaTitle: "ئاڕاستە — حدّد اتجاه مستقبلك",
+  brand: "ئاکۆی",
+  metaTitle: "ئاکۆی — حدّد اتجاه مستقبلك",
   tagline: "حدّد اتجاه مستقبلك",
   nav: ["الرئيسية", "خدماتنا", "من نحن", "تواصل معنا"],
   langLabel: "اللغة",
@@ -168,11 +168,11 @@ const ar = {
   learnMore: "اعرف المزيد",
   askAbout: "اسألنا",
   wa: {
-    hello: "مرحباً ئاڕاستە",
-    more: "مرحباً ئاڕاستە، أودّ معرفة المزيد.",
-    question: "مرحباً ئاڕاستە، لديّ سؤال.",
-    about: (s) => `مرحباً ئاڕاستە، لديّ سؤال عن: ${s}`,
-    form: (f) => `مرحباً ئاڕاستە،\nالاسم: ${f.name}\nالخدمة: ${f.service}\n${f.message}`,
+    hello: "مرحباً ئاکۆی",
+    more: "مرحباً ئاکۆی، أودّ معرفة المزيد.",
+    question: "مرحباً ئاکۆی، لديّ سؤال.",
+    about: (s) => `مرحباً ئاکۆی، لديّ سؤال عن: ${s}`,
+    form: (f) => `مرحباً ئاکۆی،\nالاسم: ${f.name}\nالخدمة: ${f.service}\n${f.message}`,
   },
   home: {
     heroText: "نساعدك في الدراسة في بولندا وأوروبا، والأنظمة والتكنولوجيا للأعمال، وخدمات السفر — بوضوح وصدق.",
@@ -192,9 +192,9 @@ const ar = {
   about: {
     eyebrow: "من نحن",
     title: "من نحن؟",
-    text: "تأسست ئاڕاستە لتساعد الناس على اتخاذ خطواتهم القادمة بوضوح وثقة — للدراسة في الخارج، وللسفر، ولأعمال منظّمة بأنظمة جيدة.",
+    text: "تأسست ئاکۆی لتساعد الناس على اتخاذ خطواتهم القادمة بوضوح وثقة — للدراسة في الخارج، وللسفر، ولأعمال منظّمة بأنظمة جيدة.",
     storyEyebrow: "قصتنا",
-    storyTitle: "لماذا ئاڕاستە؟",
+    storyTitle: "لماذا ئاکۆی؟",
     story: [
       "كثيرون يريدون الدراسة في الخارج أو السفر، لكنهم لا يعرفون من أين يبدؤون. المعلومات متفرقة والأخطاء مكلفة.",
       "نحن نوضّح هذا الطريق: خطة واقعية، وملف منظّم، وإجابات صادقة. ونبني للشركات أنظمة — لا مجرد أدوات — لتصبح أعمالها منظّمة وأسرع.",
@@ -268,8 +268,8 @@ const ar = {
 };
 
 const en = {
-  brand: "Arasta",
-  metaTitle: "Arasta — Set the direction of your future",
+  brand: "Akoi",
+  metaTitle: "Akoi — Set the direction of your future",
   tagline: "Set the direction of your future",
   nav: ["Home", "Services", "About", "Contact"],
   langLabel: "Language",
@@ -285,11 +285,11 @@ const en = {
   learnMore: "Learn more",
   askAbout: "Ask us",
   wa: {
-    hello: "Hello Arasta",
-    more: "Hello Arasta, I'd like to know more.",
-    question: "Hello Arasta, I have a question.",
-    about: (s) => `Hello Arasta, I have a question about: ${s}`,
-    form: (f) => `Hello Arasta,\nName: ${f.name}\nService: ${f.service}\n${f.message}`,
+    hello: "Hello Akoi",
+    more: "Hello Akoi, I'd like to know more.",
+    question: "Hello Akoi, I have a question.",
+    about: (s) => `Hello Akoi, I have a question about: ${s}`,
+    form: (f) => `Hello Akoi,\nName: ${f.name}\nService: ${f.service}\n${f.message}`,
   },
   home: {
     heroText: "We help you study in Poland and Europe, build systems and technology for your business, and travel — clearly and honestly.",
@@ -309,9 +309,9 @@ const en = {
   about: {
     eyebrow: "About us",
     title: "Who we are",
-    text: "Arasta was founded to help people take their next step with clarity and confidence — to study abroad, to travel, and to run a business on good systems.",
+    text: "Akoi was founded to help people take their next step with clarity and confidence — to study abroad, to travel, and to run a business on good systems.",
     storyEyebrow: "Our story",
-    storyTitle: "Why Arasta?",
+    storyTitle: "Why Akoi?",
     story: [
       "Many people want to study abroad or travel but don't know where to start. Information is scattered, and mistakes are expensive.",
       "We make the path clear: a realistic plan, a well-prepared file and honest answers. For businesses, we build systems — not just tools — so their work runs smoothly and faster.",

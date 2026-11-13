@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { content, digits, languages } from "./content";
 
 const LangContext = createContext(null);
-const KEY = "arasta-lang";
+const KEY = "akoi-lang";
 
 function initialLang() {
   try {

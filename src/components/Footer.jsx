@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="mt-28 bg-navy text-mist">
       <div className="container-x grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
-          <img src="/brand/arasta-horizontal-dark.svg" alt={t.brand} className="-m-4 h-28 w-auto" />
+          <img src="/brand/akoi-horizontal-dark.svg" alt={t.brand} className="-m-4 h-28 w-auto" />
           <p className="mt-6 max-w-xs font-heading text-lg font-bold leading-[1.75] text-cream">{t.tagline}</p>
           <div className="mt-6 flex gap-3">
             {socials.map((s) => (

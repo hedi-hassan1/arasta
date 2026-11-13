@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden justify-center md:flex">
-            <img src="/brand/arasta-symbol-dark.svg" alt="" className="w-full max-w-[380px]" />
+            <img src="/brand/akoi-symbol-dark.svg" alt="" className="w-full max-w-[380px]" />
           </div>
         </div>
       </section>
