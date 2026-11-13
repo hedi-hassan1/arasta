@@ -30,7 +30,7 @@ export default function Services() {
             <ul className="space-y-3 self-center">
               {s.items.map((it) => (
                 <li key={it} className="flex items-start gap-3 rounded-brand border border-line bg-white px-5 py-4 font-medium">
-                  <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber text-navy"><Icon name="check" size={16} strokeWidth={2} /></span>
+                  <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-accent text-navy"><Icon name="check" size={16} strokeWidth={2} /></span>
                   {it}
                 </li>
               ))}

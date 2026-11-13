@@ -7,7 +7,7 @@ export default function CTABand() {
   const { t } = useLang();
   return (
     <section className="container-x">
-      <div className="flex flex-col items-start justify-between gap-8 rounded-[18px] bg-amber p-8 sm:p-12 md:flex-row md:items-center">
+      <div className="flex flex-col items-start justify-between gap-8 rounded-[18px] bg-accent p-8 sm:p-12 md:flex-row md:items-center">
         <div className="max-w-xl">
           <h2 className="text-2xl font-extrabold text-navy sm:text-3xl">{t.cta.title}</h2>
           <p className="mt-3 text-lg text-navy">{t.cta.text}</p>

@@ -22,7 +22,7 @@ export default function LangSwitch({ dark = false }) {
     <div className="relative" ref={ref}>
       <button type="button" onClick={() => setOpen(!open)} aria-haspopup="listbox" aria-expanded={open} aria-label={t.langLabel}
         className={`flex items-center gap-2 rounded-brand border px-3 py-2 font-heading text-sm font-bold transition-colors ${
-          dark ? "border-blue-mid text-cream hover:border-amber" : "border-line bg-white text-navy hover:border-amber"}`}>
+          dark ? "border-blue-mid text-cream hover:border-accent" : "border-line bg-white text-navy hover:border-accent"}`}>
         <Icon name="europe" size={18} />
         <span>{current.label}</span>
       </button>
@@ -36,7 +36,7 @@ export default function LangSwitch({ dark = false }) {
                 className={`flex w-full items-center justify-between gap-2 px-4 py-2.5 text-start font-heading text-sm font-bold ${
                   l.code === lang ? "bg-sand text-navy" : "text-navy hover:bg-cream"}`}>
                 {l.label}
-                {l.code === lang && <Icon name="check" size={16} strokeWidth={2} className="text-amber-dark" />}
+                {l.code === lang && <Icon name="check" size={16} strokeWidth={2} className="text-accent-dark" />}
               </button>
             </li>
           ))}

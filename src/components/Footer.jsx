@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="mt-6 flex gap-3">
             {socials.map((s) => (
               <a key={s.name} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label}
-                className="grid h-11 w-11 place-items-center rounded-full border border-blue-mid text-cream transition-colors hover:border-amber hover:text-amber">
+                className="grid h-11 w-11 place-items-center rounded-full border border-blue-mid text-cream transition-colors hover:border-accent hover:text-accent">
                 <Icon name={s.name} size={20} />
               </a>
             ))}
@@ -30,23 +30,23 @@ export default function Footer() {
         <div>
           <h3 className="text-base font-bold text-cream">{t.footer.pages}</h3>
           <ul className="mt-4 space-y-2">
-            {routes.map((to, i) => (<li key={to}><Link to={to} className="hover:text-amber">{t.nav[i]}</Link></li>))}
+            {routes.map((to, i) => (<li key={to}><Link to={to} className="hover:text-accent">{t.nav[i]}</Link></li>))}
           </ul>
         </div>
 
         <div>
           <h3 className="text-base font-bold text-cream">{t.footer.services}</h3>
           <ul className="mt-4 space-y-2">
-            {t.services.map((s) => (<li key={s.id}><Link to={`/services#${s.id}`} className="hover:text-amber">{s.title}</Link></li>))}
+            {t.services.map((s) => (<li key={s.id}><Link to={`/services#${s.id}`} className="hover:text-accent">{s.title}</Link></li>))}
           </ul>
         </div>
 
         <div>
           <h3 className="text-base font-bold text-cream">{t.footer.contact}</h3>
           <ul className="mt-4 space-y-3">
-            <li><a href={waLink()} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-amber"><Icon name="phone" size={18} /><span className="ltr">{contact.whatsappDisplay}</span></a></li>
-            <li><a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-amber"><Icon name="mail" size={18} /><span className="ltr">{contact.email}</span></a></li>
-            <li><a href={contact.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-amber"><Icon name="instagram" size={18} /><span className="ltr">{contact.handle}</span></a></li>
+            <li><a href={waLink()} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-accent"><Icon name="phone" size={18} /><span className="ltr">{contact.whatsappDisplay}</span></a></li>
+            <li><a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-accent"><Icon name="mail" size={18} /><span className="ltr">{contact.email}</span></a></li>
+            <li><a href={contact.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-accent"><Icon name="instagram" size={18} /><span className="ltr">{contact.handle}</span></a></li>
           </ul>
         </div>
       </div>

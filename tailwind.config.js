@@ -7,10 +7,10 @@ module.exports = {
       colors: {
         navy: "#10233A",
         cream: "#F6F4EF",
-        amber: "#E8A33D",
+        accent: "#8EBBE6",
         sand: "#EAE6DC",
         slate: "#4A5D70",
-        "amber-dark": "#8A5A12",
+        "accent-dark": "#2F5F8F",
         "blue-mid": "#2B4A6B",
         mist: "#DCE3EA",
         line: "#E2DED5",

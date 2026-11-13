@@ -27,7 +27,7 @@ export default function Connect() {
     { icon: "tiktok", label: t.tiktok, value: contact.handle, href: contact.tiktok },
   ];
 
-  const field = "mt-2 block w-full rounded-brand border-line bg-cream px-4 py-3 text-navy focus:border-amber focus:ring-amber";
+  const field = "mt-2 block w-full rounded-brand border-line bg-cream px-4 py-3 text-navy focus:border-accent focus:ring-accent";
 
   return (
     <>
@@ -52,13 +52,13 @@ export default function Connect() {
           <label className="mt-5 block font-semibold">{c.message}
             <textarea required rows={5} value={form.message} onChange={set("message")} className={field} placeholder={c.messagePh} />
           </label>
-          <button type="submit" className="btn-amber mt-7 w-full sm:w-auto"><Icon name="phone" size={20} /> {c.send}</button>
+          <button type="submit" className="btn-accent mt-7 w-full sm:w-auto"><Icon name="phone" size={20} /> {c.send}</button>
         </form>
 
         <div className="grid content-start gap-3">
           {channels.map((ch) => (
             <a key={ch.label} href={ch.href} target={ch.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer"
-              className="card flex items-center gap-4 p-5 transition-colors hover:border-amber">
+              className="card flex items-center gap-4 p-5 transition-colors hover:border-accent">
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-brand bg-sand text-navy"><Icon name={ch.icon} size={24} /></span>
               <span>
                 <span className="block text-sm text-slate">{ch.label}</span>

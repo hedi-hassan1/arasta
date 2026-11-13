@@ -27,7 +27,7 @@ export default function NavBar() {
               {({ isActive }) => (
                 <span className="relative py-2">
                   {t.nav[i]}
-                  {isActive && <span className="absolute -bottom-1 start-0 h-1 w-6 rounded-full bg-amber" />}
+                  {isActive && <span className="absolute -bottom-1 start-0 h-1 w-6 rounded-full bg-accent" />}
                 </span>
               )}
             </NavLink>
@@ -55,7 +55,7 @@ export default function NavBar() {
                 {t.nav[i]}
               </NavLink>
             ))}
-            <a href={waLink(t.wa.hello)} target="_blank" rel="noreferrer" className="btn-amber mt-3">
+            <a href={waLink(t.wa.hello)} target="_blank" rel="noreferrer" className="btn-accent mt-3">
               <Icon name="phone" size={18} /> {t.messageUs}
             </a>
           </nav>
