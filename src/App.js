@@ -1,35 +1,33 @@
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Programs from './pages/Programs';
-import Blogs from './pages/Blogs';
-import Error from './pages/Error';
-import Connect from './pages/Connect';
-import BlogPost from './components/BlogPost';
-import Company from './pages/Company';
+import React from "react";
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import ScrollToTop from "./pages/ScrollToTop";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Connect from "./pages/Connect";
+import NotFound from "./pages/NotFound";
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import './App.css';
-import ScrollToTop from './pages/ScrollToTop';
-
-function App() {
+export default function App() {
   return (
     <Router>
       <ScrollToTop />
       <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<Company />} />
-        <Route path='/programs' element={<Programs />} />
-        <Route path='/blogs' element={<Blogs />} />
-        <Route path='/post' element={<BlogPost />} />
-        <Route path='/connect' element={<Connect />} />
-        <Route path='*' element={<Error />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/connect" element={<Connect />} />
+          {/* old addresses from the previous site */}
+          <Route path="/programs" element={<Navigate to="/services" replace />} />
+          <Route path="/blogs" element={<Navigate to="/" replace />} />
+          <Route path="/post" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
-  )
+  );
 }
-
-export default App;

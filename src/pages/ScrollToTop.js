@@ -1,14 +1,15 @@
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-const ScrollToTop = () => {
-    const { pathname } = useLocation();
-    useEffect(
-        () => {
-            window.scrollTo(0, 0);
-        },
-        [pathname]
-    );
+// New page: start at the top, or at the #section when the link has one.
+export default function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const t = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+      return () => clearTimeout(t);
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+  return null;
 }
-
-export default ScrollToTop

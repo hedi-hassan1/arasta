@@ -1,27 +1,28 @@
+/* Brand fonts, self-hosted from /public/fonts (SIL Open Font License) */
+@font-face { font-family: "Noto Kufi Arabic"; font-weight: 700; font-display: swap; src: url("./fonts/NotoKufiArabic-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Noto Kufi Arabic"; font-weight: 800; font-display: swap; src: url("./fonts/NotoKufiArabic-ExtraBold.ttf") format("truetype"); }
+@font-face { font-family: "Noto Sans Arabic"; font-weight: 400; font-display: swap; src: url("./fonts/NotoSansArabic-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Noto Sans Arabic"; font-weight: 500; font-display: swap; src: url("./fonts/NotoSansArabic-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Noto Sans Arabic"; font-weight: 600; font-display: swap; src: url("./fonts/NotoSansArabic-SemiBold.ttf") format("truetype"); }
+
 @tailwind base;
 @tailwind components;
-
-.btn {
-    @apply w-max rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-white text-center shadow-xl hover:bg-opacity-90
-    focus:bg-primary-hover duration-300 transition-colors
-}
-
-.title {
-    @apply text-3xl font-semibold md:font-bold tracking-tight sm:text-4xl text-primary leading-10
-}
-
-.subdesc {
-    @apply text-sm md:text-base lg:text-lg text-gray-700 font-medium
-}
-
-.text {
-    @apply text-justify text-sm md:text-base text-gray-700 leading-6 md:leading-7
-}
-
-/* .btn-secondary{
-    @apply w-max flex rounded-xl transition bg-gray-100/70 px-4 py-3 text-sm font-semibold text-center text-gray-600 items-center gap-1.5 
-    hover:bg-gray-200 focus:bg-gray-200
-} */
-
-
 @tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream text-navy font-body leading-[1.75] antialiased; }
+  h1, h2, h3, h4 { @apply font-heading leading-[1.38]; text-wrap: balance; }
+  ::selection { @apply bg-amber text-navy; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8; }
+  .accent-bar { @apply block h-1.5 w-11 rounded-full bg-amber; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-brand px-6 py-3 font-heading text-base font-bold transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2; }
+  .btn-amber { @apply btn bg-amber text-navy hover:bg-amber/90; }
+  .btn-navy { @apply btn bg-navy text-cream hover:bg-blue-mid; }
+  .btn-ghost-dark { @apply btn border-2 border-blue-mid text-cream hover:border-amber; }
+  .card { @apply rounded-[18px] border border-line bg-white; }
+  .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+}
