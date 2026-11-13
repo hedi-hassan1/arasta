@@ -45,7 +45,7 @@ export default function Footer() {
           <h3 className="text-base font-bold text-cream">{t.footer.contact}</h3>
           <ul className="mt-4 space-y-3">
             <li><a href={waLink()} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-accent"><Icon name="phone" size={18} /><span className="ltr">{contact.whatsappDisplay}</span></a></li>
-            <li><a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-accent"><Icon name="mail" size={18} /><span className="ltr">{contact.email}</span></a></li>
+            {contact.email && <li><a href={`mailto:${contact.email}`} className="flex items-center gap-2 hover:text-accent"><Icon name="mail" size={18} /><span className="ltr">{contact.email}</span></a></li>}
             <li><a href={contact.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-accent"><Icon name="instagram" size={18} /><span className="ltr">{contact.handle}</span></a></li>
           </ul>
         </div>

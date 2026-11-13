@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// Arasta brand tokens — the only colors and fonts allowed (see brand/tokens.css)
+// Akoi brand tokens — the only colors and fonts allowed (see brand/tokens.css)
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {

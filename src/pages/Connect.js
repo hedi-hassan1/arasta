@@ -25,7 +25,7 @@ export default function Connect() {
     { icon: "instagram", label: t.instagram, value: contact.handle, href: contact.instagram },
     { icon: "facebook", label: t.facebook, value: contact.handle, href: contact.facebook },
     { icon: "tiktok", label: t.tiktok, value: contact.handle, href: contact.tiktok },
-  ];
+  ].filter((ch) => ch.value);
 
   const field = "mt-2 block w-full rounded-brand border-line bg-cream px-4 py-3 text-navy focus:border-accent focus:ring-accent";
 
@@ -44,7 +44,7 @@ export default function Connect() {
             <input required value={form.name} onChange={set("name")} className={field} placeholder={c.namePh} />
           </label>
           <label className="mt-5 block font-semibold">{c.service}
-            <select value={form.service} onChange={set("service")} className={field}>
+            <select value={form.service} onChange={set("service")} className={`${field} rtl:bg-[position:left_0.75rem_center] rtl:pl-10 rtl:pr-4`}>
               {t.services.map((s) => <option key={s.id}>{s.title}</option>)}
               <option>{c.other}</option>
             </select>

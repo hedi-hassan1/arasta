@@ -6,11 +6,11 @@ export const contact = {
   whatsappDisplay: "+964 751 061 5254",
   phone2Display: "+964 750 360 0926",
   phone2: "+9647503600926",
-  email: "arasta.agency1@gmail.com",
-  instagram: "https://www.instagram.com/arasta.agency",
-  facebook: "https://www.facebook.com/arasta.agency",
-  tiktok: "https://www.tiktok.com/@arasta.agency",
-  handle: "@arasta.agency",
+  email: "", // new email not set yet — empty hides it
+  instagram: "https://www.instagram.com/akoi.agency",
+  facebook: "https://www.facebook.com/akoi.agency",
+  tiktok: "https://www.tiktok.com/@akoi.agency",
+  handle: "@akoi.agency",
 };
 
 export const waLink = (text) =>
