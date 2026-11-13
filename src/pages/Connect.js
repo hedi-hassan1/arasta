@@ -53,6 +53,7 @@ export default function Connect() {
             <textarea required rows={5} value={form.message} onChange={set("message")} className={field} placeholder={c.messagePh} />
           </label>
           <button type="submit" className="btn-accent mt-7 w-full sm:w-auto"><Icon name="phone" size={20} /> {c.send}</button>
+          <p className="mt-5 flex items-start gap-2 text-sm text-slate"><Icon name="shield" size={18} className="mt-0.5 shrink-0" />{c.privacy}</p>
         </form>
 
         <div className="grid content-start gap-3">

@@ -37,6 +37,7 @@ const SERVICE_META = [
 const ckb = {
   brand: "ئاکۆی",
   metaTitle: "ئاکۆی — ئاڕاستەی داهاتووت دیاری بکە",
+  metaDescription: "ئاکۆی: خوێندن لە پۆڵەندا، خوێندن و کار لە ئەوروپا و بەریتانیا، وۆرکشۆپ و خولی کورت، سیستەم بۆ بازرگانی و خزمەتگوزاری گەشت — بە ڕوونی و ڕاستگۆیی.",
   tagline: "ئاڕاستەی داهاتووت دیاری بکە",
   nav: ["سەرەکی", "خزمەتگوزارییەکان", "دەربارە", "پەیوەندی"],
   langLabel: "زمان",
@@ -99,6 +100,7 @@ const ckb = {
     message: "نامەکەت",
     messagePh: "پرسیارەکەت لێرە بنووسە",
     send: "ناردن لە واتسئاپ",
+    privacy: "ئەم فۆڕمە هیچ زانیارییەک پاشەکەوت ناکات؛ تەنها نامەکەت لە واتسئاپ دەکاتەوە. زانیارییەکانت تەنها بۆ وەڵامدانەوەی داواکارییەکەت بەکاردەهێنرێن و لەگەڵ کەسی تر هاوبەش ناکرێن.",
   },
   cta: {
     title: "پرسیارت هەیە؟ نامەمان بۆ بنێرە",
@@ -160,6 +162,7 @@ const ckb = {
 const ar = {
   brand: "ئاکۆی",
   metaTitle: "ئاکۆی — حدّد اتجاه مستقبلك",
+  metaDescription: "ئاکۆی: الدراسة في بولندا، الدراسة والعمل في أوروبا والمملكة المتحدة، ورش العمل والدورات القصيرة، الأنظمة للأعمال وخدمات السفر — بوضوح وصدق.",
   tagline: "حدّد اتجاه مستقبلك",
   nav: ["الرئيسية", "خدماتنا", "من نحن", "تواصل معنا"],
   langLabel: "اللغة",
@@ -222,6 +225,7 @@ const ar = {
     message: "رسالتك",
     messagePh: "اكتب سؤالك هنا",
     send: "إرسال عبر واتساب",
+    privacy: "هذا النموذج لا يحفظ أي معلومات؛ إنه يفتح رسالتك في واتساب فقط. نستخدم معلوماتك للرد على طلبك فقط ولا نشاركها مع أي جهة أخرى.",
   },
   cta: {
     title: "لديك سؤال؟ راسلنا",
@@ -283,6 +287,7 @@ const ar = {
 const en = {
   brand: "Akoi",
   metaTitle: "Akoi — Set the direction of your future",
+  metaDescription: "Akoi Agency: study in Poland, study and work in Europe and the UK, workshops and short courses, business systems and travel services — clearly and honestly.",
   tagline: "Set the direction of your future",
   nav: ["Home", "Services", "About", "Contact"],
   langLabel: "Language",
@@ -345,6 +350,7 @@ const en = {
     message: "Your message",
     messagePh: "Write your question here",
     send: "Send on WhatsApp",
+    privacy: "This form stores nothing — it only opens your message in WhatsApp. We use your details only to answer your request and never share them with anyone else.",
   },
   cta: {
     title: "Have a question? Message us",

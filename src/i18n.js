@@ -21,8 +21,10 @@ export function LangProvider({ children }) {
     document.documentElement.lang = lang;
     document.documentElement.dir = meta.dir;
     document.title = t.metaTitle;
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc && t.metaDescription) desc.setAttribute("content", t.metaDescription);
     try { localStorage.setItem(KEY, lang); } catch (e) { /* ignore */ }
-  }, [lang, meta.dir, t.metaTitle]);
+  }, [lang, meta.dir, t.metaTitle, t.metaDescription]);
 
   const value = { lang, setLang, t, dir: meta.dir, num: (n) => digits(n, lang) };
   return React.createElement(LangContext.Provider, { value }, children);
